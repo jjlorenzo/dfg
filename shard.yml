@@ -1,0 +1,31 @@
+name: dfg
+
+version: 0.1.0
+
+authors:
+  - Jose Jorge Lorenzo <jjlorenzo@users.noreply.github.com>
+
+description: dfg
+
+crystal: 0.35.1
+
+dependencies:
+  cli:
+    github: bcardiff/cli
+    branch: crystal/0.35.1
+  crun:
+    github: val/crun
+  tallboy:
+    github: epoch/tallboy
+
+development_dependencies:
+  ameba:
+    github: crystal-ameba/ameba
+
+targets:
+  dfg:
+    main: src/cli.cr
+  dfg-run:
+    main: lib/crun/src/main.cr
+
+license: MIT

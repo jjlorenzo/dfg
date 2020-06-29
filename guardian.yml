@@ -1,0 +1,5 @@
+files: src/**/*.cr
+run:   shards build dfg
+---
+files: shard.yml
+run:   shards install
